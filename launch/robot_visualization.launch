@@ -1,0 +1,8 @@
+<launch>
+  <!-- Run the robot_state_publisher -->
+  <node name="robot_state_publisher" pkg="simple_mobile_robot" type="robot_state_publisher.py" output="screen"/>
+
+  <!-- Launch RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_mobile_robot)/rviz/simple_mobile_robot.rviz" required="true" />
+
+</launch>
